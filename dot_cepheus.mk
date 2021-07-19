@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/cepheus/device.mk)
 # Inherit some common Dot stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
+# Google Camera
+$(call inherit-product-if-exists, vendor/GoogleCamera/GoogleCamera.mk)
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
