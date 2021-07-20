@@ -35,5 +35,6 @@ PRODUCT_MODEL := Mi 9
 PRODUCT_MANUFACTURER := Xiaomi
 
 TARGET_FOD_ANIMATIONS := true
+EXTRA_FOD_ANIMATIONS := true
 # Include firmware
 $(call inherit-product, vendor/xiaomi/firmware/cepheus/firmware.mk)
