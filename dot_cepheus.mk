@@ -27,9 +27,6 @@ $(call inherit-product, vendor/dot/config/common.mk)
 # Google Camera
 $(call inherit-product-if-exists, vendor/GoogleCamera/GoogleCamera.mk)
 
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
-
 # Device identifier
 PRODUCT_NAME := dot_cepheus
 PRODUCT_DEVICE := cepheus
@@ -37,7 +34,14 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9
 PRODUCT_MANUFACTURER := Xiaomi
 
+# FOD Stuff
 TARGET_FOD_ANIMATIONS := true
 EXTRA_FOD_ANIMATIONS := true
+
+# Pixel Stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_BLUR := true
+TARGET_FACE_UNLOCK := true
+
 # Include firmware
 $(call inherit-product, vendor/xiaomi/firmware/cepheus/firmware.mk)
