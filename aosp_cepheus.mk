@@ -39,5 +39,9 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_USES_FACE_UNLOCK := true
 
+# FOD
+TARGET_FOD_ANIMATIONS := true
+EXTRA_FOD_ANIMATIONS := true
+
 # Include firmware
 $(call inherit-product, vendor/xiaomi-firmware/cepheus/firmware.mk)
