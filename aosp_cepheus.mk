@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/cepheus/device.mk)
 # Inherit some common PE stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Google Camera
+$(call inherit-product-if-exists, vendor/apps/GoogleCamera/GoogleCameraParrot.mk)
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
