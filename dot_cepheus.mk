@@ -44,4 +44,4 @@ TARGET_SUPPORTS_BLUR := true
 TARGET_FACE_UNLOCK := true
 
 # Include firmware
-$(call inherit-product, vendor/xiaomi/firmware/cepheus/firmware.mk)
+$(call inherit-product, vendor/xiaomi-firmware/cepheus/firmware.mk)
